@@ -1,0 +1,326 @@
+(.toUpperCase "fred")
+
+(.getName String)
+
+(.-x (java.awt.Point. 1 2))
+
+""
+
+"\""
+
+"abc"
+
+"'"
+
+"i am a multi-line
+ string\""
+
+42
+
++1
+
+-5
+
++0
+
+0xff
+
+2r111
+
+040
+
+36rCRAZY
+
+4.23e9
+
+4.23e-9
+
+4.23e+9
+
+40.3e6
+
+40.3e-6
+
+1.234
+
+0.123456
+
+.12345
+
+1e4
+
+0.2e-2
+
+0.0e-4
+
+.2e-2
+
++83
+
+N
+
+4
+
+N
+
+-27362746264274623285736757364838535636343463
+
+N
+
+0.01M
+
+-4.2M
+
+3/2
+
++4/5
+
+-7/11
+
+nil
+
+true
+
+false
+
+#""
+
+#"\""
+
+#"pattern"
+
+#"(\w+)\s(\w+)"
+
+\a
+
+\7
+
+\Z
+
+\}
+
+\newline
+
+\space
+
+\tab
+
+\formfeed
+
+\backspace
+
+\return
+
+\u2202
+
+\u03a9
+
+\u00A1
+
+\o3
+
+\o4
+
+1
+
+\o2
+
+56
+
+#::{}
+
+#::{:a 1, :b 2}
+
+#:person{}
+
+#:foo-bar{:a "a"}
+
+#{}
+
+#{true}
+
+#{true false}
+
+#{"a", "b", nil}
+
+{}
+
+{:a "a"}
+
+{"x" :x, "y" :y, "z" :z}
+
+[]
+
+[true]
+
+["a" :b 3]
+
+()
+
+("a" "b" "c")
+
+(:a {:a "a"})
+
+^{:a 1 :b 2} ["a" "b"]
+
+^:private ^:dynamic ^"foo" ^String #{}
+
+(comment)
+
+(     comment "foo")
+
+["a" (comment
+       "b") "c"]
+
+["a" (comment (foo ())) "c"]
+
+(#_ nil true)
+
+#_["a" "b"]
+
+#_ #{"a" "b"}
+
+["a" "b" #_:z "d"]
+
+["a" "b" #_ #{} "d"]
+
+#!/usr/bin/env
+
+#! #{} :foo
+
+; foo
+
+;; foo
+
+'()
+
+'"a"
+
+'("a" "b" "c")
+
+(quote ())
+
+(quote "a")
+
+(quote ("a" "b" "c"))
+
+@foo
+
+@      foo
+
+@(identity foo)
+
+#inst "foo"
+
+#uuid :bar
+
+#?(:clj  (Clojure expression)
+   :cljs (ClojureScript expression)
+   :cljr (ClojureCLR expression)
+   :default (fallthrough expression))
+
+(list #?@(:clj  ["a"]
+          :cljs [:a]))
+
+[##Inf, 2, 3]
+
+##-Inf
+
+(+ 8 ## NaN)
+
+##       Inf
+
+:a
+
+:foo
+
+:rubber-baby-buggy-bumper!
+
+:j3_!:7
+
+:HELICOPTER
+
+:+fiduciary+
+
+:use-smart-mode?
+
+::foo
+
+::foo/bar
+
+a
+
+foo
+
+rubber-baby-buggy-bumper!
+
+j3_!:7
+
+HELICOPTER
+
++fiduciary+
+
+a/b
+
+foo/bar
+
+(fn foo [])
+
+(    fn   bar   [y]      nil     )
+
+(fn biz
+  ([x] x)
+  ([x y] (+ x y)))
+
+(fn [])
+
+(    fn      [y]      nil     )
+
+(fn
+  ([x] x)
+  ([x y] (+ x y)))
+
+(defn foo "foo" [])
+
+(defn flatten
+  "Takes any nested combination of sequential things (lists, vectors,
+  etc.) and returns their contents as a single, flat sequence.
+  (flatten nil) returns an empty sequence."
+  {:added "1.2"
+   :static true}
+  []
+  7)
+
+#()
+
+#(conj [] "a")
+
+#(swap! % inc)
+
+#(conj [] %1 %2 %3 %&)
+
+(defn foo [])
+
+(defn- foo [x] 4)
+
+(defn foo
+  ([] "zero arity")
+  ([x y] "multi arity"))
+
+(defn ^:private ^Boolean always-true
+  "private function that returns a boolean value"
+  []
+  true)
+
+(defn ^{:foo "bar"} always-false
+  []
+  false)
+
+`(foo ~x)
+
+`(foo ~@y)
+
+`(foo z#)
+
+#'foo
+

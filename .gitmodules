@@ -1,0 +1,6 @@
+[submodule "tsclj-oakmac"]
+	path = tsclj-oakmac
+	url = https://github.com/oakmac/tree-sitter-clojure
+[submodule "tsclj-Tavistock"]
+	path = tsclj-Tavistock
+	url = https://github.com/Tavistock/tree-sitter-clojure

@@ -1,0 +1,214 @@
+0.02e100
+
+0.02E100
+
+1
+
+001
+
+0.01
+
+0xa
+
+0xaa
+
+1/2
+
+0001
+
+/2
+
+-1
+
++1
+
++100/1
+
+12E+99
+
+12.0E+99
+
++12.0E+99
+
++12E+99
+
+0.
+
+00000010
+
+0/1
+
+#{:a :b :c}
+
+#{}
+
+\newline
+
+\a
+
+\u9999
+
+\o3
+
+77
+
+[1 2 3]
+
+[]
+
+nil
+
+true
+
+false
+
+java.util.BitSet
+
+clojure.core/foo
+
+foo.core
+
+foo
+
+*1
+
+*foo*
+
+FOO
+
+clojure.core/foo!
+
+->
+
+$
+
+->>
+
+--?
+
+a:a:a
+
+"Hello there"
+
+"Hello
+there"
+
+"Hello \n There"
+
+(a b c)
+
+()
+
+{}
+
+{:a 1 :b 2}
+
+{:a 1, :b 2}
+
+#:person{:a 1 :b 2}
+
+#::{:a 1 :b 2}
+
+#:person{}
+
+#::{}
+
+%1
+
+%
+
+%&
+
+:clojure.core/foo
+
+:foo.core
+
+:foo
+
+:*1
+
+:*foo*
+
+:FOO
+
+:clojure.core/foo!
+
+::clojure.core/foo
+
+::foo
+
+#""
+
+#"[^1234]"
+
+#+cljs (prn "cljs")
+
+; This is depreciated
+
+^String a
+
+^:dynamic [1]
+
+^{:a 1} []
+
+#^String a
+
+#^:dynamic [1]
+
+#^{:a 1} []
+
+(def ^String a 1)
+
+#()
+
+#(%1 %2 % %&)
+
+#'a
+
+`a
+
+~a
+
+~@a
+
+a#
+
+(def x 5)
+
+(def lst '(a b c))
+
+`(fred x ~x lst ~@lst 7 8 :nine)
+
+@a
+
+; This is a comment
+
+;; So is this
+
+(this is not)
+
+{#?@(:clj (:a 1))}
+
+{#?@()}
+
+{#?@(:clj (:a 1) :cljs (:a 2))}
+
+[#?@(:clj [1 2])]
+
+#inst "2011-11-11"
+
+#uuid "97bda55b-6175-4c39-9e04-7c0205c709dc"
+
+#?(:clj [])
+
+#?(:clj  (Clojure expression)
+   :cljs (ClojureScript expression)
+   :cljr (ClojureCLR expression)
+   :default (fallthrough expression))
+
+#_ ()
+
+[]
+
+#_ #_ () (1)
+
